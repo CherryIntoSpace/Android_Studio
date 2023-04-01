@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#57498F18"
+    android:orientation="vertical"
+    android:id="@+id/drawerView">
+
+    <!--activity_drawer.xml은 서랍이 펼쳐졌을 때의 화면을 구성하는 레이아웃들로 이루어져 있다.-->
+    <!--서랍을 닫는 Button, 2개의 TextView-->
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close Menu">
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#D029FD">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Menu"
+            android:gravity="center">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

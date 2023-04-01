@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--match_parent: 부모의 길이를 참고하여 맞추기
+android:orientation은 수직으로 컨텐츠를 추가하고 정렬한다.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- wrap_content는 EditText 내의 글자 크기에 맞춰 크기를 조정한다.
+    EditText는 사용자로부터 입력을 받고
+    @는 id를 R.java와 같은 리소스에 정의하거나 참조한다는 	의미로 반드시 붙여야 하며,
+    +는 ID를 새로 정의한다는 뜻이다.
+    즉, “et_id”라는 id를 부여한다. 이 과정을 거치면 R.java에 정수 상수로 정의된다. -->
+    <!--android:textSize는 20sp의 텍스트 크기 지정
+    android:textColor는 #ffffff, f를 6개 입력시 텍스트의 색깔을 지정할 수 있다.-->
+    <EditText
+        android:id="@+id/et_id"
+        android:textSize="20sp"
+        android:textColor="#F44336"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="아이디를 입력하세요..."/>
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼"/>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--EditText와 Button을 담고 있는 LinearLayout 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_test"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이동" />
+    </LinearLayout>
+
+    <!--android:gravity : 위젯의 정렬 방식 변경, LinearLayout 내의 ImageView를 왼쪽으로 정렬한다.
+    이외에도 중앙인 center, 오른쪽인 right로 정렬 가능하다.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <!--ImageView의 src를 res/mipmap의 폴더 내의 이미지로 지정-->
+        <ImageView
+            android:id="@+id/test_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+</LinearLayout>

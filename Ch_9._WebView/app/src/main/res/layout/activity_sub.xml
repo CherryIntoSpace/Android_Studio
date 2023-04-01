@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--MainActivity가 intent를 시작하면 실행되는 activity_sub.xml-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity">
+
+    <!--웹사이트의 표시는 WebView 레이아웃을 사용-->
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+</LinearLayout>
